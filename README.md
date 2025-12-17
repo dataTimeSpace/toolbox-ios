@@ -1,4 +1,4 @@
-# <img src="/svg/DTSLogoAdaptive.svg" width="32" height="32"> Data Time Space Toolbox
+# <img src="/README-resources/DTSLogoAdaptive.svg" width="32" height="32"> Data Time Space Toolbox
 
 ## Read First
 
