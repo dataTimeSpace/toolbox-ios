@@ -1,29 +1,25 @@
-# Vuforia Spatial Toolbox
+# <img src="/svg/DTSLogoAdaptive.svg" width="32" height="32"> Data Time Space Toolbox
 
 ## Read First
-The Vuforia Spatial Toolbox and Vuforia Spatial Edge Server make up a shared research platform
+
+The Toolbox and Edge Server make up a shared research platform
 for exploring spatial computing as a community. This research platform is not an out of the box
 production-ready enterprise solution. Please read the [MPL 2.0 license](LICENSE) before use.
 
-Join the conversations in our [discourse forum](https://forum.spatialtoolbox.vuforia.com) if you
-have questions, ideas want to collaborate or just say hi.
-
 ## Installation
-How to build and run Vuforia Spatial Toolbox iOS App from your Mac OS computer from source code.
-If you just want to get the app on your phone as quickly as possible, you can simply [download it from the iOS App
- Store](https://apps.apple.com/us/app/vuforia-spatial-toolbox/id1506071001).
+How to build and run Data Time Space Toolbox iOS App from your Mac OS computer from source code
 
-1. Clone the vuforia-spatial-toolbox-ios repo from GitHub.
+1. Clone the toolbox-ios repo from GitHub.
 
 ```
-git clone https://github.com/ptcrealitylab/vuforia-spatial-toolbox-ios.git
+git clone https://github.com/dataTimeSpace/toolbox-ios.git
 ```
 
-2. Initialize the git submodules to get the correct versions of the vuforia-spatial-edge-server
-   and the vuforia-spatial-toolbox-userinterface.
+2. Initialize the git submodules to get the correct versions of the edge-server
+   and userinterface repositories.
 
 ```
-cd vuforia-spatial-toolbox-ios
+cd toolbox-ios
 git submodule init
 git submodule update
 ```
@@ -61,9 +57,9 @@ npm install
    This project was last updated with Vuforia SDK version: `9.6.4`
 
  - Paste the Vuforia.framework file from the `build` directory of the download into the top level
-   of the `vuforia-spatial-toolbox-ios` directory.
+   of the `toolbox-ios` directory.
  - If the latest Vuforia SDK version has been updated beyond this documentation and you have trouble
-   compiling the app, please consult the [forum](https://forum.spatialtoolbox.vuforia.com).
+   compiling the app, please file an issue.
 
 7. Get a Vuforia Engine license key from http://developer.vuforia.com by logging in and navigating
    to `Develop > License Manager > Get Development Key`. The name of your key doesn't matter.
@@ -96,18 +92,11 @@ const char* vuforiaKey = "Replace this string with your license key";
 
 While this codebase is fundamentally compatible with iPhones and iPads, it has currently only
 been recently tested with iPhones. This has been developed primarily with iOS 12, 13, and 14
-and with device models iPhone 6S through 11 Pro. If you would like to use this with iPads or
-otherwise improve the compatibility with additional devices and OS versions, your help in testing
-the app on those platforms and identifying bugs will greatly accelerate the path towards full
-compatibility for those devices (you can get involved on our
-[forum](https://forum.spatialtoolbox.vuforia.com)).
-
-If you would like to help developing or testing our Android port (currently in pre-alpha development),
-drop us a note in the forum.
+and with device models iPhone 6S through 11 Pro.
 
 ### Additional Documentation
 
-Please refer to our [documentation repository](https://github.com/ptcrealitylab/vuforia-spatial-toolbox-documentation)
+Please refer to our [documentation repository](https://github.com/dataTimeSpace/vuforia-spatial-toolbox-documentation)
 for additional tutorials, setup guides, and introductions to various aspects of the system.
 
 ### Notes
